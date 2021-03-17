@@ -151,6 +151,11 @@ nav #link a {
   padding: 0 1142px 0;
 }
 
+#Brand {
+  font-size: large;
+  text-align: center;
+}
+
 footer {
   width: 100%;
   height: 220px;
