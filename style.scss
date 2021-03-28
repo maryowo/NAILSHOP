@@ -1,10 +1,12 @@
+$color-1: #C97F04;
+$color-2: #EFD9A7;
 $color-black: rgba(66, 57, 48, 1.0);
 $box-shawod: 0 5px 7px rgba(0, 0, 0, 0.2);
 
 // Colors
 $white: #fff;
 $black: #000;
-$primary: #FF1932;
+$primary: #fff;
 $gray: #616161;
 
 *{  
@@ -28,6 +30,7 @@ nav {
     opacity: 0.4;
     box-shadow: $box-shawod;
     z-index: 3;
+    font-size: 18px;
 
     #web {
         .logo {
@@ -108,10 +111,46 @@ nav {
 }
 
 // 品牌介紹
-#Brand {
-    font-size: large;
-    text-align: center;
+#BRAND {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 50px 0;
+  
+
+  p {
+      text-align: center;
+      line-height: 1.5;
+      font-size: 16px;
+      padding: 20px 30px 30px;
+    }
+
+  #brand-content {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     grid-gap: 350px;
+     padding: 30px;
+     
+
+     .brand-card {
+         box-shadow: $box-shawod;
+        
+     }
+     
+     img {
+         width: 100%;
+         height: auto;
+         object-fit: cover;
+      }
+
+     h3 { 
+         text-align: center;
+         padding: 20px 0 10px;
+         font-size: 14px;
+      }
+
+  }
 }
+
 
 // 服務項目
 // Base style
@@ -120,8 +159,8 @@ body,
 .container { height: 100%; }
 
 body {
-  font-family: Arial, sans-serif;
-  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1px;
 }
 
 .container {
@@ -132,11 +171,16 @@ body {
   flex-direction: column;
 }
 
+p {
+          text-align: left;
+
+}
+
 .title {
   font-size: 38px;
   color: $gray;
   font-style: italic;
-  font-weight: 800;
+  font-weight: 400;
 }
 
 // Timeline
@@ -169,20 +213,20 @@ body {
       bottom: -10%;
       width: 100%;
       height: 100%;
-      background-color: rgba($black, .7);
-      box-shadow: -230px 0 150px 60vw rgba($black, .7);
+      background-color: rgba($black, .6);
+      box-shadow: -230px 0 150px 100vw rgba($black, .7);
       border-radius: 100%;
     }
 
     &-content {
       position: absolute;
-      text-align: center;
+      text-align: left;
       width: 80%;
-      max-width: 310px;
+      max-width: 700px;
       right: 50%;
       top: 13%;
       transform: translate(50%, 0);
-      font-size: 12px;
+      font-size: 14px;
       z-index: 2;
     }
 
@@ -208,10 +252,11 @@ body {
     }
 
     .timeline-text {
-      line-height: 1.5;
+      line-height: 1.8;
       opacity: 0;
       transform: translate3d(20px, 0, 0);
       transition: .2s ease .6s;
+      font-size: 16px;
     }
     
     &-active {
@@ -236,7 +281,6 @@ body {
   }
 
   .swiper-pagination {
-    // 改  
     left: 15%!important;
     height: 100%;
     display: none;
@@ -250,7 +294,7 @@ body {
     &::before {
       content: "";
       position: absolute;
-      left: -30px;
+      left: 72.5px;
       top: 0;
       height: 100%;
       width: 1px;
@@ -260,7 +304,7 @@ body {
     &-bullet {
       width: auto;
       height: auto;
-      text-align: center;
+      text-align: left;
       opacity: 1;
       background: transparent;
       color: $primary;
@@ -271,7 +315,7 @@ body {
         content: "";
         position: absolute;
         top: 8px;
-        left: -32.5px;
+        left: 70px;
         width: 6px;
         height: 6px;
         border-radius: 100%;
@@ -300,7 +344,7 @@ body {
   }
 
   .swiper-button-prev {
-    left: 8%;
+    right: 8%;
     background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23d4a024'%2F%3E%3C%2Fsvg%3E");
 
     &:hover { transform: translateX(-3px); }
@@ -316,20 +360,20 @@ body {
   @media screen and (min-width: 768px) {
     .swiper-slide {
       &::after {
-        right: -8%;
+        right: -25%;
         bottom: -8%;
         width: 240px;
         height: 50%;
-        box-shadow: -230px 0 150px 50vw rgba($black, .7);
+        box-shadow: -230px 0 150px 100vw rgba($black, .6);
       }
 
       &-content {
-        right: 30%;
+        left: 30%;
         top: 50%;
         transform: translateY(-50%);
-        width: 310px;
-        font-size: 11px;
-        text-align: right;
+        width: 500px;
+        font-size: 14px;
+        text-align: left;
       }
       
       .timeline-year {
@@ -338,7 +382,7 @@ body {
       }
       
       .timeline-title {
-        font-size: 46px;
+        font-size: 36px;
         margin: 0;
       }
     }
@@ -347,9 +391,8 @@ body {
     
     .swiper-button-prev {
       top: 15%;
-      //改
-      left: 12%;
-      right: auto;
+      left: auto;
+      right: 15%;
       transform: rotate(90deg) translate(0, 10px);
       
       &:hover { transform: rotate(90deg) translate(-3px, 10px); }
@@ -358,8 +401,7 @@ body {
     .swiper-button-next {
       top: auto;
       bottom: 15%;
-      //改
-      left: 12%;
+      right: 15%;
       transform: rotate(90deg) translate(0, 10px);
       
       &:hover { transform: rotate(90deg) translate(3px, 10px); }
@@ -369,14 +411,14 @@ body {
   @media screen and (min-width: 1024px) {
     .swiper-slide {
       &::after {
-        right: -20%;
+        left: -20%;
         bottom: -12%;
-        width: 240px;
+        width: 500px;
         height: 50%;
-        box-shadow: -230px 0 150px 39vw rgba($black, .7);
+        box-shadow: -230px 0 750px 80vw rgba($black, .7);
       }
       
-      &-content { right: 25%; }
+      &-content { left: 25%; width: 500px !important; }
     }
   }
 }
@@ -388,51 +430,18 @@ body {
 
 
 
-// 最新消息
-#SHOP {
-    width: 1280px;
-    margin: 0 auto;
-    padding: 50px 0;
 
-    #shop-content {
-       display: grid;
-       grid-template-columns: repeat(3, 1fr);
-       grid-gap: 20px;
 
-       .shop-card {
-           box-shadow: $box-shawod;
-       }
-       
-       img {
-           width: 100%;
-           height: 300px;
-           object-fit: cover;
-        }
-
-       h2 { 
-           text-align: center;
-           padding: 20px 0 10px;
-        }
-
-        p {
-          text-align: center;
-          line-height: 1.5;
-          font-size: 14px;
-          padding: 20px 30px 30px;
-        }
-
-    }
-}
 
 
 // 聯絡資訊
 form {
     width: 1000px;
     margin: 0 auto;
-    padding: 20px 20px 100px;
+    padding: 20px 30px 100px;
 
     input {
-        width: 45%;
+        width: 32.5%;
         padding: 10px;
         
         &::placeholder{
@@ -441,46 +450,51 @@ form {
         }
     }
 
-    input[type=phone] {
+    input[type=text1] {
         float: right;
-
     }
+
+    input[type=submit] {
+      margin: 35px;
+
+  }
 }
 
 // 專業產品
-#BRAND {
-    width: 1280px;
-    margin: 0 auto;
-    padding: 50px 0;
+#SHOP {
+  width: 1280px;
+  margin: 0 auto;
+  padding: 50px 0;
 
-    #p {
+  #shop-content {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     grid-gap: 20px;
+
+     .shop-card {
+         box-shadow: $box-shawod;
+     }
+     
+     img {
+         width: 100%;
+         height: 300px;
+         object-fit: cover;
+      }
+
+     h2 {
+         font-size: 18px;
+         text-align: center;
+         padding: 20px 0 10px;
+      }
+
+      p {
         text-align: center;
         line-height: 1.5;
-        font-size: 14px;
+        font-size: 16px;
         padding: 20px 30px 30px;
       }
 
-    #brand-content {
-       display: grid;
-       grid-template-columns: repeat(3, 1fr);
-       grid-gap: 20px;
-
-       .brand-card {
-           box-shadow: $box-shawod;
-       }
-       
-       img {
-           width: 100%;
-           height: 300px;
-           object-fit: cover;
-        }
-
-       h3 { 
-           text-align: center;
-           padding: 20px 0 10px;
-        }
-
-    }
+  }
 }
 
 // 頁尾樣式
@@ -528,10 +542,19 @@ hr {
 
 // title 標題樣式
 .title {
+font-weight: 1000;
 font-size: 30px;
 text-align: center;
 padding: 30px;
 }
+
+.title1 {
+  font-weight: 1000;
+  font-size: 30px;
+  text-align: center;
+  padding: 30px;
+  color: white;
+  }
 
 // 統一樣式
 // 按鈕樣式
@@ -554,3 +577,5 @@ padding: 30px;
         color: white;
     }
 }
+
+
