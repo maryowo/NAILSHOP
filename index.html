@@ -9,14 +9,18 @@
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
     <!-- css -->
-    <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800">
+    <link rel="stylesheet" href="./style.css">
+
 </head>
 
-<body>
+<body id="top">
     <!-- 導覽列   -->
     <nav>
+        <div id="menu">
+            
+        </div>
         <div id="web">
             <a href="" class="logo">NAILSHOP</a>
             <!-- 社群  -->
@@ -29,11 +33,11 @@
         </div>
         <!-- 分頁 link -->
         <div id="link">
-            <a href="">Brand</a>
-            <a href="">Services</a>
-            <a href="">Manicurist</a>
-            <a href="">Booking</a>
-            <a href="">Shop</a>
+            <a href="" data-st-tagrget="BRAND" data-st-duration="1000">Brand</a>
+            <a href="" data-st-tagrget="SERVICES" data-st-duration="2000" data-st-offset="100">Services</a>
+            <a href="" data-st-tagrget="Manicurist" data-st-duration="3000" data-st-offset="100">Manicurist</a>
+            <a href="" data-st-tagrget="BOOKING" data-st-duration="4000" data-st-offset="100">Booking</a>
+            <a href="" data-st-tagrget="SHOP" data-st-duration="5000" data-st-offset="100">Shop</a>
         </div>
     </nav>
 
@@ -77,13 +81,13 @@
         </div>
     </section>
     <!-- 服務項目 -->
-    <div class="container">
+    <div id="SERVICES" class="container">
         <h1 class="title">Services</h1>
         <div class="timeline">
             <div class="swiper-container">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide"
-                        style="background-image: url(https://image.freepik.com/free-photo/bare-feet-hands-pedicure-manicure-concept_144627-42117.jpg"
+                        style="background-image: url(https://image.freepik.com/free-photo/bare-feet-hands-pedicure-manicure-concept_144627-42117.jpg)"
                         data-year="部位">
                         <div class="swiper-slide-content">
                             <!-- <span class="timeline-year">部位</span> -->
@@ -91,15 +95,17 @@
                             <p class="timeline-text">手部 / 足部</p>
                         </div>
                     </div>
-                    <div class="swiper-slide" style="background-image: url(https://image.freepik.com/free-photo/skin-care-serum_23-2148136607.jpg" data-year="保養">
+                    <div class="swiper-slide"
+                        style="background-image: url(https://image.freepik.com/free-photo/skin-care-serum_23-2148136607.jpg)"
+                        data-year="保養">
                         <div class="swiper-slide-content">
                             <!-- <span class="timeline-year">保養</span> -->
                             <h4 class="timeline-title">保養</h4>
                             <p class="timeline-text">基本 / 深層</p>
                         </div>
                     </div>
-                    <div class="swiper-slide" 
-                        style="background-image: url(https://image.freepik.com/free-photo/healthy-beautiful-manicure-manicurist-with-file_23-2148766563.jpg"
+                    <div class="swiper-slide"
+                        style="background-image: url(https://image.freepik.com/free-photo/healthy-beautiful-manicure-manicurist-with-file_23-2148766563.jpg)"
                         data-year="甲型">
                         <div class="swiper-slide-content">
                             <!-- <span class="timeline-year">甲型</span> -->
@@ -107,7 +113,8 @@
                             <p class="timeline-text">方形 / 方圓 / 圓形 / 橢圓形 / 杏仁核形</p>
                         </div>
                     </div>
-                    <div class="swiper-slide" style="background-image: url(https://image.freepik.com/free-photo/healthy-beautiful-manicure-manicurist_23-2148766558.jpg"
+                    <div class="swiper-slide"
+                        style="background-image: url(https://image.freepik.com/free-photo/healthy-beautiful-manicure-manicurist_23-2148766558.jpg)"
                         data-year="延甲">
                         <div class="swiper-slide-content">
                             <!-- <span class="timeline-year">延甲</span> -->
@@ -117,8 +124,8 @@
                                 nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                         </div>
                     </div>
-                    <div class="swiper-slide" 
-                        style="background-image: url(https://image.freepik.com/free-photo/professional-manicurist-gloves-applying-base-coat-ring-finger_176420-11583.jpg"
+                    <div class="swiper-slide"
+                        style="background-image: url(https://image.freepik.com/free-photo/professional-manicurist-gloves-applying-base-coat-ring-finger_176420-11583.jpg)"
                         data-year="底色">
                         <div class="swiper-slide-content">
                             <!-- <span class="timeline-year">底色</span> -->
@@ -126,7 +133,8 @@
                             <p class="timeline-text">單色 / 跳色 / 漸層 / 法式</p>
                         </div>
                     </div>
-                    <div class="swiper-slide" style="background-image: url(https://image.freepik.com/free-photo/manicurist-doing-trendy-nail-art-with-thin-manicure-brush_176420-11599.jpg"
+                    <div class="swiper-slide"
+                        style="background-image: url(https://image.freepik.com/free-photo/manicurist-doing-trendy-nail-art-with-thin-manicure-brush_176420-11599.jpg)"
                         data-year="設計">
                         <div class="swiper-slide-content">
                             <!-- <span class="timeline-year">設計</span> -->
@@ -134,7 +142,8 @@
                             <p class="timeline-text">搭配 / 彩繪/ 暈染 / 鏡面 / 粉雕</p>
                         </div>
                     </div>
-                    <div class="swiper-slide" style="background-image: url(https://image.freepik.com/free-photo/hands-with-nice-nails-nail-grooming-manicure-concept_144627-33191.jpg"
+                    <div class="swiper-slide"
+                        style="background-image: url(https://image.freepik.com/free-photo/hands-with-nice-nails-nail-grooming-manicure-concept_144627-33191.jpg)"
                         data-year="卸甲">
                         <div class="swiper-slide-content">
                             <!-- <span class="timeline-year">卸甲</span> -->
@@ -159,22 +168,20 @@
     </div>
 
     <!-- 線上預約 -->
-    <h1 class="title">Booking</h1>
-    <!-- 表單元素 action="" 傳遞給後端頁面，通常是 XXX.php ex:getMessage.php-->
-    <!-- 方法:傳遞資料的方式 -->
-    <!-- GET 曝光表單資料 -->
-    <!-- POST 不會曝光表單資料 -->
-    <form action="" method="POST">
-        <input type="text" name="user-name" placeholder="請輸入您的姓名" required>
-        <input type="phone" name="user-phone" placeholder="請輸入您的手機" required>
-        <input type="text1" name="nailshop-manicurist" placeholder="請輸入您想預約的美甲師" required>
-        <input type="submit" value="SUBMIT" class="btn">
+    <div id="BOOKING">
+        <h1 class="title">Booking</h1>
+        <!-- 表單元素 action="" 傳遞給後端頁面，通常是 XXX.php ex:getMessage.php-->
+        <!-- 方法:傳遞資料的方式 -->
+        <!-- GET 曝光表單資料 -->
+        <!-- POST 不會曝光表單資料 -->
+        <form action="" method="POST">
+            <input type="text" name="user-name" placeholder="請輸入您的姓名" required>
+            <input type="phone" name="user-phone" placeholder="請輸入您的手機" required>
+            <input type="text1" name="nailshop-manicurist" placeholder="請輸入您想預約的美甲師" required>
+            <input type="submit" value="SUBMIT" class="btn">
 
-    </form>
-
-
+        </form>
     </div>
-
     <!-- 專業產品 -->
     <section id="SHOP">
         <h1 class="title">Shop</h1>
@@ -182,21 +189,21 @@
             <div class="shop-card">
                 <img src="./SHOP-IMG/tools.jpg" alt="https://www.freepik.com/photos/hand">
                 <h2>美甲材料</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                <p>#凝膠 #拉線膠 #甲油膠 #上層膠</p>
                 <button class="btn">MORE</button>
             </div>
 
             <div class="shop-card">
                 <img src="./SHOP-IMG/tool.jpg" alt="https://www.freepik.com/photos/hand">
                 <h2>美甲工具</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                <p>#0號筆 #粉雕筆 #乾皮剪 #鋼推</p>
                 <button class="btn">MORE</button>
             </div>
 
             <div class="shop-card">
                 <img src="./SHOP-IMG/healthy-beautiful-manicure-tools.jpg" alt="https://www.freepik.com/photos/hand">
                 <h2>保養產品</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                <p>#指緣油 #護甲油 #硬甲油</p>
                 <button class="btn">MORE</button>
             </div>
         </div>
@@ -231,12 +238,17 @@
         </div>
     </footer>
 
+    <!-- TOP -->
+    <a id="arrow" data-st-tagrget="top" data-st-duration="800" data-st-top="300" data-st-time="1000"></a>
+
     <!-- CDN -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- slick js -->
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <!-- Swiper js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
+    <!--  -->
+    <script src="https://kid421.github.io/Web_HC_ZL_ScrollToElement/main.js"></script>
     <!-- js -->
     <script src="./main.js"></script>
 
