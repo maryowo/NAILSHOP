@@ -107,6 +107,7 @@ nav #link a {
   text-decoration: none;
   display: inline-block;
   padding: 8px 10px;
+  cursor: pointer;
 }
 
 #banner .slick-prev {
@@ -623,7 +624,7 @@ p {
 #MANICURIST {
   width: 1280px;
   height: 720px;
-  margin: 0 auto;
+  margin: 0 auto 100px;
   padding: 50px 0;
 }
 
@@ -667,7 +668,7 @@ p {
 }
 
 #MANICURIST #manicurist-all #manicurist-content img {
-  width: 80%;
+  width: 70%;
 }
 
 #MANICURIST #manicurist-all #manicurist-content2 {

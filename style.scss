@@ -99,6 +99,7 @@ nav {
       text-decoration: none;
       display: inline-block;
       padding: 8px 10px;
+      cursor: pointer;
     }
   }
 }
@@ -513,7 +514,7 @@ p {
 #MANICURIST {
   width: 1280px;
   height: 720px;
-  margin: 0 auto;
+  margin: 0 auto 100px;
   padding: 50px 0;
 
   @media screen and (max-width: $tablet) {
@@ -544,7 +545,7 @@ p {
 
     #manicurist-content {
       img {
-        width: 80%;
+        width: 70%;
       }
     }
 
@@ -567,7 +568,6 @@ p {
         h1 {
           font-size: 30px;
         }
-
       }
 
       .manicurist-card2 {
@@ -607,39 +607,40 @@ p {
 }
 
 // 聯絡資訊
-form {
-  width: 1000px;
-  margin: 0 auto;
-  padding: 20px 30px 100px;
+  form {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 20px 30px 100px;
 
-  @media screen and (max-width: $tablet) {
-    width: 100%;
-    padding: 20px 20px 100px;
-  }
-
-  input {
-    width: 32.5%;
-    padding: 10px;
-
-    @media screen and (max-width: $mobile) {
+    @media screen and (max-width: $tablet) {
       width: 100%;
-      margin-bottom: 20px;
+      padding: 20px 20px 100px;
     }
 
-    &::placeholder {
-      color: gray;
-      font-size: 14px;
+    input {
+      width: 32.5%;
+      padding: 10px;
+
+      @media screen and (max-width: $mobile) {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+
+      &::placeholder {
+        color: gray;
+        font-size: 14px;
+      }
+    }
+
+    input[type="text1"] {
+      float: right;
+    }
+
+    input[type="submit"] {
+      margin: 35px;
     }
   }
 
-  input[type="text1"] {
-    float: right;
-  }
-
-  input[type="submit"] {
-    margin: 35px;
-  }
-}
 
 // 專業產品
 #SHOP {
