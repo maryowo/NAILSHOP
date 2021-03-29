@@ -109,6 +109,16 @@ nav #link a {
   padding: 8px 10px;
 }
 
+#banner .slick-prev {
+  left: 50px;
+  z-index: 2;
+}
+
+#banner .slick-next {
+  right: 50px;
+  z-index: 2;
+}
+
 #banner .slick-dots {
   bottom: 50px;
   z-index: 2;
@@ -117,6 +127,7 @@ nav #link a {
 #banner .banner1 {
   background-image: url(./IMG/banner_1.jpg);
   height: 100vh;
+  text-align: center;
   color: #423930;
 }
 
@@ -154,6 +165,7 @@ nav #link a {
 #banner .banner2 {
   background-image: url(./IMG/banner_2.jpg);
   height: 100vh;
+  text-align: center;
   color: #423930;
 }
 
@@ -191,6 +203,7 @@ nav #link a {
 #banner .banner3 {
   background-image: url(./IMG/banner_3.jpg);
   height: 100vh;
+  text-align: center;
   color: #423930;
 }
 
@@ -231,6 +244,12 @@ nav #link a {
   padding: 50px 0;
 }
 
+@media screen and (max-width: 1024px) {
+  #BRAND {
+    width: 100%;
+  }
+}
+
 #BRAND p {
   text-align: center;
   line-height: 1.5;
@@ -257,6 +276,7 @@ nav #link a {
 
 @media screen and (max-width: 767px) {
   #BRAND #brand-content {
+    width: 55vh;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     grid-gap: 50px;
@@ -288,7 +308,7 @@ body,
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 1px;
 }
 
@@ -384,8 +404,8 @@ p {
   color: #fff;
   font-weight: 300;
   opacity: 0;
-  -webkit-transition: .2s ease .4s;
-  transition: .2s ease .4s;
+  -webkit-transition: 0.2s ease 0.4s;
+  transition: 0.2s ease 0.4s;
 }
 
 .timeline .swiper-slide .timeline-title {
@@ -395,8 +415,8 @@ p {
   opacity: 0;
   -webkit-transform: translate3d(20px, 0, 0);
           transform: translate3d(20px, 0, 0);
-  -webkit-transition: .2s ease .5s;
-  transition: .2s ease .5s;
+  -webkit-transition: 0.2s ease 0.5s;
+  transition: 0.2s ease 0.5s;
 }
 
 .timeline .swiper-slide .timeline-text {
@@ -404,8 +424,8 @@ p {
   opacity: 0;
   -webkit-transform: translate3d(20px, 0, 0);
           transform: translate3d(20px, 0, 0);
-  -webkit-transition: .2s ease .6s;
-  transition: .2s ease .6s;
+  -webkit-transition: 0.2s ease 0.6s;
+  transition: 0.2s ease 0.6s;
   font-size: 16px;
 }
 
@@ -413,24 +433,24 @@ p {
   opacity: 1;
   -webkit-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0);
-  -webkit-transition: .4s ease 1.6s;
-  transition: .4s ease 1.6s;
+  -webkit-transition: 0.4s ease 1.6s;
+  transition: 0.4s ease 1.6s;
 }
 
 .timeline .swiper-slide-active .timeline-title {
   opacity: 1;
   -webkit-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0);
-  -webkit-transition: .4s ease 1.7s;
-  transition: .4s ease 1.7s;
+  -webkit-transition: 0.4s ease 1.7s;
+  transition: 0.4s ease 1.7s;
 }
 
 .timeline .swiper-slide-active .timeline-text {
   opacity: 1;
   -webkit-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0);
-  -webkit-transition: .4s ease 1.8s;
-  transition: .4s ease 1.8s;
+  -webkit-transition: 0.4s ease 1.8s;
+  transition: 0.4s ease 1.8s;
 }
 
 .timeline .swiper-pagination {
@@ -482,8 +502,8 @@ p {
   background-color: #fff;
   -webkit-transform: scale(0);
           transform: scale(0);
-  -webkit-transition: .2s;
-  transition: .2s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .timeline .swiper-pagination-bullet-active {
@@ -503,8 +523,8 @@ p {
   height: 20px;
   margin-top: 0;
   z-index: 2;
-  -webkit-transition: .2s;
-  transition: .2s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .timeline .swiper-button-prev {
@@ -597,6 +617,107 @@ p {
   }
 }
 
+#MANICURIST {
+  width: 1280px;
+  height: 720px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+@media screen and (max-width: 1024px) {
+  #MANICURIST {
+    width: 100%;
+    height: 1280px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #MANICURIST {
+    width: 100%;
+    height: 2480px;
+  }
+}
+
+#MANICURIST #manicurist-all {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-gap: 100px;
+}
+
+@media screen and (max-width: 1024px) {
+  #MANICURIST #manicurist-all {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 50px;
+    margin: 0 20px 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #MANICURIST #manicurist-all {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 50px;
+  }
+}
+
+#MANICURIST #manicurist-all #manicurist-content2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (2fr)[3];
+      grid-template-columns: repeat(3, 2fr);
+  grid-gap: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  #MANICURIST #manicurist-all #manicurist-content2 {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 50px;
+  }
+}
+
+#MANICURIST #manicurist-all #manicurist-content2 .manicurist-card h1 {
+  font-size: 30px;
+}
+
+#MANICURIST #manicurist-all #manicurist-content2 .manicurist-card p {
+  font-size: 30px;
+}
+
+@media screen and (max-width: 767px) {
+  #MANICURIST #manicurist-all #manicurist-content2 .manicurist-card2 {
+    display: none;
+  }
+}
+
+#MANICURIST #manicurist-all #manicurist-content2 .manicurist-card3 {
+  -webkit-box-shadow: 0 5px 7px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 7px rgba(0, 0, 0, 0.2);
+}
+
+#MANICURIST #manicurist-all #manicurist-content2 .manicurist-card3 img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#MANICURIST #manicurist-all #manicurist-content2 .manicurist-card3 h1 {
+  font-size: 40px;
+  text-align: center;
+  padding: 20px 0 10px;
+}
+
+#MANICURIST #manicurist-all #manicurist-content2 .manicurist-card3 p {
+  color: gray;
+  text-align: center;
+  font-size: 16px;
+  padding-bottom: 10px;
+}
+
 form {
   width: 1000px;
   margin: 0 auto;
@@ -613,6 +734,13 @@ form {
 form input {
   width: 32.5%;
   padding: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  form input {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 }
 
 form input::-webkit-input-placeholder {
@@ -635,11 +763,11 @@ form input::placeholder {
   font-size: 14px;
 }
 
-form input[type=text1] {
+form input[type="text1"] {
   float: right;
 }
 
-form input[type=submit] {
+form input[type="submit"] {
   margin: 35px;
 }
 

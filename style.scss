@@ -1,6 +1,6 @@
-$color-1: #C97F04;
-$color-2: #EFD9A7;
-$color-black: rgba(66, 57, 48, 1.0);
+$color-1: #c97f04;
+$color-2: #efd9a7;
+$color-black: rgba(66, 57, 48, 1);
 $box-shawod: 0 5px 7px rgba(0, 0, 0, 0.2);
 $tablet: 1024px; // 平板尺寸
 $mobile: 767px; // 手機尺寸
@@ -11,11 +11,11 @@ $black: #000;
 $primary: #fff;
 $gray: #616161;
 
-*{  
-    margin: 0;
-    padding: 0;
-    font-family: 微軟正黑體;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 微軟正黑體;
+  box-sizing: border-box;
 }
 
 // 導覽列樣式
@@ -27,141 +27,145 @@ $gray: #616161;
   display: none;
 
   @media screen and (max-width: $tablet) {
-      display: block;
-      margin: 0 10px 0 auto;
+    display: block;
+    margin: 0 10px 0 auto;
   }
 
   @media screen and (max-width: $mobile) {
-      margin: 0 20px 0 auto;
-      background-size: cover;
-      width: 40px;
-      height: 40px;
+    margin: 0 20px 0 auto;
+    background-size: cover;
+    width: 40px;
+    height: 40px;
   }
 }
 nav {
-    width: 100%;
-    height: 70px;
-    display: grid;
-    grid-template-columns: 40% auto 50%;
-    text-align: center;
-    position: fixed;
-    background:  $color-black;
-    padding: 15px 0 18px;
-    /* 透明度:0-1 */
-    opacity: 0.4;
-    box-shadow: $box-shawod;
-    z-index: 3;
-    font-size: 18px;
+  width: 100%;
+  height: 70px;
+  display: grid;
+  grid-template-columns: 40% auto 50%;
+  text-align: center;
+  position: fixed;
+  background: $color-black;
+  padding: 15px 0 18px;
+  /* 透明度:0-1 */
+  opacity: 0.4;
+  box-shadow: $box-shawod;
+  z-index: 3;
+  font-size: 18px;
 
-    @media screen and (max-width: $tablet) {
-      grid-template-columns: 100% 0;
+  @media screen and (max-width: $tablet) {
+    grid-template-columns: 100% 0;
   }
 
   @media screen and (max-width: $mobile) {
-      padding: 20px 0;
+    padding: 20px 0;
   }
-    
 
-    #web {
-        .logo {
-        color: white;
-        text-decoration: none;
-        font-size: 28px;
-        padding: 0 10px;
-        display: inline-block; 
-        }
-
-        .social {
-          @media screen and (max-width: $tablet) {
-            display: none;
-        }
-            color: white;
-            text-decoration: none;
-            display: inline-block; 
-            padding: 0 5px;
-        }
-        
-        .social-1 {
-          @media screen and (max-width: $tablet) {
-            display: none;
-        }
-            color: white;
-            text-decoration: none;
-            display: inline-block; 
-        }
-        
+  #web {
+    .logo {
+      color: white;
+      text-decoration: none;
+      font-size: 28px;
+      padding: 0 10px;
+      display: inline-block;
     }
 
-    #link {
+    .social {
       @media screen and (max-width: $tablet) {
         display: none;
+      }
+      color: white;
+      text-decoration: none;
+      display: inline-block;
+      padding: 0 5px;
     }
-        a {
-        color: white;
-        text-decoration: none;
-        display: inline-block; 
-        padding: 8px 10px ;
-        }
+
+    .social-1 {
+      @media screen and (max-width: $tablet) {
+        display: none;
+      }
+      color: white;
+      text-decoration: none;
+      display: inline-block;
     }
+  }
+
+  #link {
+    @media screen and (max-width: $tablet) {
+      display: none;
+    }
+    a {
+      color: white;
+      text-decoration: none;
+      display: inline-block;
+      padding: 8px 10px;
+    }
+  }
 }
 
 // 最新消息-輪播
 #banner {
-    .slick-dots {
-        bottom: 50px;
-        z-index: 2;
-    }
+  .slick-prev {
+    left: 50px;
+    z-index: 2;
+  }
 
-    @for $i from 1 through 3 {
-        .banner#{$i} {
-            background-image: url(./IMG/banner_#{$i}.jpg);
-            height: 100vh;
-            // PANTONE 2479 CP
-            color: $color-black;
+  .slick-next {
+    right: 50px;
+    z-index: 2;
+  }
 
-            @media screen and (max-width: $tablet) {
-              background-size: cover;
-          }
-    
-            &:focus {
-                outline: none;
-            }
+  .slick-dots {
+    bottom: 50px;
+    z-index: 2;
+  }
 
-            h1 {
-                padding: 260px 1150px 0;
-                font-size: 72px;
-                letter-spacing: 20px;
-                @media screen and (max-width: $tablet) {
-                 
-              }
+  @for $i from 1 through 3 {
+    .banner#{$i} {
+      background-image: url(./IMG/banner_#{$i}.jpg);
+      height: 100vh;
+      text-align: center;
+      // PANTONE 2479 CP
+      color: $color-black;
 
-              @media screen and (max-width: $mobile) {
-                  
-              }
-                
-            }
-    
-            p1 {
-                font-size: 24px;
-                padding: 0 1157px 0;
+      @media screen and (max-width: $tablet) {
+        background-size: cover;
+      }
 
-                @media screen and (max-width: $mobile) {
-                
-                  
-              }
-            }
+      &:focus {
+        outline: none;
+      }
 
-            p2 {
-                font-size: 24px;
-                padding: 0 1160px 0;
-            }
-
-            p3 {
-                font-size: 24px;
-                padding: 0 1142px 0;
-            }
+      h1 {
+        padding: 260px 1150px 0;
+        font-size: 72px;
+        letter-spacing: 20px;
+        @media screen and (max-width: $tablet) {
         }
+
+        @media screen and (max-width: $mobile) {
+        }
+      }
+
+      p1 {
+        font-size: 24px;
+        padding: 0 1157px 0;
+
+        @media screen and (max-width: $mobile) {
+        }
+      }
+
+      p2 {
+        font-size: 24px;
+        padding: 0 1160px 0;
+      }
+
+      p3 {
+        font-size: 24px;
+        padding: 0 1142px 0;
+      }
     }
+  }
 }
 
 // 品牌介紹
@@ -169,59 +173,62 @@ nav {
   width: 1000px;
   margin: 0 auto;
   padding: 50px 0;
-  
+
+  @media screen and (max-width: $tablet) {
+    width: 100%;
+  }
 
   p {
-      text-align: center;
-      line-height: 1.5;
-      font-size: 16px;
-      padding: 20px 30px 30px;
-    }
+    text-align: center;
+    line-height: 1.5;
+    font-size: 16px;
+    padding: 20px 30px 30px;
+  }
 
   #brand-content {
-     display: grid;
-     grid-template-columns: repeat(3, 1fr);
-     grid-gap: 350px;
-     padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 350px;
+    padding: 30px;
 
-     @media screen and (max-width: $tablet) {
+    @media screen and (max-width: $tablet) {
       width: 100%;
       height: auto;
       padding: 50px 10px;
-  }
-     @media screen and (max-width: $mobile) {
+    }
+    @media screen and (max-width: $mobile) {
+      width: 55vh;
       grid-template-columns: 1fr;
       grid-gap: 50px;
-  }
-     .brand-card {
-         box-shadow: $box-shawod;
-        
-     }
-     
-     img {
-         width: 100%;
-         height: auto;
-         object-fit: cover;
-      }
+    }
+    .brand-card {
+      box-shadow: $box-shawod;
+    }
 
-     h3 { 
-         text-align: center;
-         padding: 20px 0 10px;
-         font-size: 14px;
-      }
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
 
+    h3 {
+      text-align: center;
+      padding: 20px 0 10px;
+      font-size: 14px;
+    }
   }
 }
-
 
 // 服務項目
 // Base style
 html,
 body,
-.container { height: 100%; }
+.container {
+  height: 100%;
+}
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 1px;
 }
 
@@ -234,8 +241,7 @@ body {
 }
 
 p {
-          text-align: left;
-
+  text-align: left;
 }
 
 .title {
@@ -249,15 +255,17 @@ p {
 .timeline {
   width: 100%;
   background-color: #fff;
-  box-shadow: 0 5px 25px 5px rgba($black, .2);
+  box-shadow: 0 5px 25px 5px rgba($black, 0.2);
 
   .swiper-container {
     height: 600px;
     width: 100%;
     position: relative;
   }
-  
-  .swiper-wrapper { transition: 2s cubic-bezier(.68,-0.4,.27,1.34) .2s; }
+
+  .swiper-wrapper {
+    transition: 2s cubic-bezier(0.68, -0.4, 0.27, 1.34) 0.2s;
+  }
 
   .swiper-slide {
     position: relative;
@@ -266,7 +274,7 @@ p {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-  
+
     &::after {
       content: "";
       position: absolute;
@@ -275,8 +283,8 @@ p {
       bottom: -10%;
       width: 100%;
       height: 100%;
-      background-color: rgba($black, .6);
-      box-shadow: -230px 0 150px 100vw rgba($black, .7);
+      background-color: rgba($black, 0.6);
+      box-shadow: -230px 0 150px 100vw rgba($black, 0.7);
       border-radius: 100%;
     }
 
@@ -301,7 +309,7 @@ p {
       color: $primary;
       font-weight: 300;
       opacity: 0;
-      transition: .2s ease .4s;
+      transition: 0.2s ease 0.4s;
     }
 
     .timeline-title {
@@ -310,40 +318,40 @@ p {
       margin: 0 0 30px;
       opacity: 0;
       transform: translate3d(20px, 0, 0);
-      transition: .2s ease .5s;
+      transition: 0.2s ease 0.5s;
     }
 
     .timeline-text {
       line-height: 1.8;
       opacity: 0;
       transform: translate3d(20px, 0, 0);
-      transition: .2s ease .6s;
+      transition: 0.2s ease 0.6s;
       font-size: 16px;
     }
-    
+
     &-active {
       .timeline-year {
         opacity: 1;
         transform: translate3d(0, 0, 0);
-        transition: .4s ease 1.6s;
+        transition: 0.4s ease 1.6s;
       }
-      
+
       .timeline-title {
         opacity: 1;
         transform: translate3d(0, 0, 0);
-        transition: .4s ease 1.7s;
+        transition: 0.4s ease 1.7s;
       }
-      
+
       .timeline-text {
         opacity: 1;
         transform: translate3d(0, 0, 0);
-        transition: .4s ease 1.8s;
+        transition: 0.4s ease 1.8s;
       }
     }
   }
 
   .swiper-pagination {
-    left: 15%!important;
+    left: 15% !important;
     height: 100%;
     display: none;
     flex-direction: column;
@@ -352,7 +360,7 @@ p {
     font-weight: 300;
     font-size: 18px;
     z-index: 1;
-  
+
     &::before {
       content: "";
       position: absolute;
@@ -360,9 +368,9 @@ p {
       top: 0;
       height: 100%;
       width: 1px;
-      background-color: rgba($white, .2);
+      background-color: rgba($white, 0.2);
     }
-  
+
     &-bullet {
       width: auto;
       height: auto;
@@ -370,7 +378,7 @@ p {
       opacity: 1;
       background: transparent;
       color: $primary;
-      margin: 15px 0!important;
+      margin: 15px 0 !important;
       position: relative;
 
       &::before {
@@ -383,13 +391,15 @@ p {
         border-radius: 100%;
         background-color: $primary;
         transform: scale(0);
-        transition: .2s;
+        transition: 0.2s;
       }
-      
+
       &-active {
         color: $primary;
 
-        &::before { transform: scale(1); }
+        &::before {
+          transform: scale(1);
+        }
       }
     }
   }
@@ -402,21 +412,25 @@ p {
     height: 20px;
     margin-top: 0;
     z-index: 2;
-    transition: .2s;
+    transition: 0.2s;
   }
 
   .swiper-button-prev {
     right: 8%;
     background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23d4a024'%2F%3E%3C%2Fsvg%3E");
 
-    &:hover { transform: translateX(-3px); }
+    &:hover {
+      transform: translateX(-3px);
+    }
   }
 
   .swiper-button-next {
     right: 8%;
     background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23d4a024'%2F%3E%3C%2Fsvg%3E");
 
-    &:hover { transform: translateX(3px); }
+    &:hover {
+      transform: translateX(3px);
+    }
   }
 
   @media screen and (min-width: 768px) {
@@ -426,7 +440,7 @@ p {
         bottom: -8%;
         width: 240px;
         height: 50%;
-        box-shadow: -230px 0 150px 100vw rgba($black, .6);
+        box-shadow: -230px 0 150px 100vw rgba($black, 0.6);
       }
 
       &-content {
@@ -437,36 +451,42 @@ p {
         font-size: 14px;
         text-align: left;
       }
-      
+
       .timeline-year {
         margin-bottom: 0;
-        font-size: 32px;   
+        font-size: 32px;
       }
-      
+
       .timeline-title {
         font-size: 36px;
         margin: 0;
       }
     }
-    
-    .swiper-pagination { display: flex; }
-    
+
+    .swiper-pagination {
+      display: flex;
+    }
+
     .swiper-button-prev {
       top: 15%;
       left: auto;
       right: 15%;
       transform: rotate(90deg) translate(0, 10px);
-      
-      &:hover { transform: rotate(90deg) translate(-3px, 10px); }
+
+      &:hover {
+        transform: rotate(90deg) translate(-3px, 10px);
+      }
     }
-    
+
     .swiper-button-next {
       top: auto;
       bottom: 15%;
       right: 15%;
       transform: rotate(90deg) translate(0, 10px);
-      
-      &:hover { transform: rotate(90deg) translate(3px, 10px); }
+
+      &:hover {
+        transform: rotate(90deg) translate(3px, 10px);
+      }
     }
   }
 
@@ -477,45 +497,148 @@ p {
         bottom: -12%;
         width: 500px;
         height: 50%;
-        box-shadow: -230px 0 750px 80vw rgba($black, .7);
+        box-shadow: -230px 0 750px 80vw rgba($black, 0.7);
       }
-      
-      &-content { left: 25%; width: 500px !important; }
+
+      &-content {
+        left: 25%;
+        width: 500px !important;
+      }
     }
   }
 }
 
+// 美甲師
+#MANICURIST {
+  width: 1280px;
+  height: 720px;
+  margin: 0 auto;
+  padding: 50px 0;
 
+  @media screen and (max-width: $tablet) {
+    width: 100%;
+    height: 1280px;
+  }
 
+  @media screen and (max-width: $mobile) {
+    width: 100%;
+    height: 2480px;
+  }
 
+  #manicurist-all {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 100px;
+
+    @media screen and (max-width: $tablet) {
+      grid-template-columns: 1fr;
+      grid-gap: 50px;
+      margin: 0 20px 0;
+    }
+
+    @media screen and (max-width: $mobile) {
+      grid-template-columns: 1fr;
+      grid-gap: 50px;
+    }
+
+    #manicurist-content {
+    }
+
+    #manicurist-content2 {
+      display: grid;
+      grid-template-columns: repeat(3, 2fr);
+      grid-gap: 20px;
+
+      @media screen and (max-width: $mobile) {
+        grid-template-columns: 1fr;
+        grid-gap: 50px;
+      }
+
+      .manicurist-card {
+        // @media screen and (max-width: $mobile) {
+        //   grid-template-columns: 1fr;
+        //   grid-gap: 50px;
+        // }
+
+        h1 {
+          font-size: 30px;
+        }
+
+        p {
+          font-size: 30px;
+        }
+      }
+
+      .manicurist-card2 {
+        @media screen and (max-width: $mobile) {
+          display: none;
+        }
+      }
+
+      .manicurist-card3 {
+        box-shadow: $box-shawod;
+        // @media screen and (max-width: $mobile) {
+        //   grid-template-columns: 1fr;
+        //   grid-gap: 50px;
+        // }
+
+        img {
+          width: 100%;
+          height: auto;
+          object-fit: cover;
+        }
+
+        h1 {
+          font-size: 40px;
+          text-align: center;
+          padding: 20px 0 10px;
+        }
+
+        p {
+          color: gray;
+          text-align: center;
+          font-size: 16px;
+          padding-bottom: 10px;
+        }
+      }
+    }
+  }
+}
 
 // 聯絡資訊
 form {
-    width: 1000px;
-    margin: 0 auto;
-    padding: 20px 30px 100px;
-    @media screen and (max-width: $tablet) {
-      width: 100%;
-      padding: 20px 20px 100px;
+  width: 1000px;
+  margin: 0 auto;
+  padding: 20px 30px 100px;
+
+  @media screen and (max-width: $tablet) {
+    width: 100%;
+    padding: 20px 20px 100px;
   }
 
-    input {
-        width: 32.5%;
-        padding: 10px;
-        
-        &::placeholder{
-            color: gray;
-            font-size: 14px;
-        }
+  
+
+  input {
+    width: 32.5%;
+    padding: 10px;
+
+    @media screen and (max-width: $mobile) {
+      width: 100%;
+      margin-bottom: 20px;
     }
 
-    input[type=text1] {
-        float: right;
+    &::placeholder {
+      color: gray;
+      font-size: 14px;
     }
+  }
 
-    input[type=submit] {
-      margin: 35px;
+  input[type="text1"] {
+    float: right;
+  }
 
+  input[type="submit"] {
+    margin: 35px;
   }
 }
 
@@ -530,92 +653,90 @@ form {
     padding: 50px 20px;
   }
 
-
   #shop-content {
-     display: grid;
-     grid-template-columns: repeat(3, 1fr);
-     grid-gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
 
-     @media screen and (max-width: $mobile) {
+    @media screen and (max-width: $mobile) {
       grid-template-columns: 1fr;
       grid-gap: 50px;
-     }
+    }
 
-     .shop-card {
-         box-shadow: $box-shawod;
-     
-     
-       img {
-         width: 100%;
-         height: 300px;
-         object-fit: cover;
-        }
+    .shop-card {
+      box-shadow: $box-shawod;
 
-       h2 {
-         font-size: 18px;
-         text-align: center;
-         padding: 20px 0 10px;
-        }
+      img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+      }
 
-       p {
-         color: gray;
-         text-align: center;
-         font-size: 16px;
-         padding-bottom: 10px;
-         }
-      } 
-  }  
+      h2 {
+        font-size: 18px;
+        text-align: center;
+        padding: 20px 0 10px;
+      }
+
+      p {
+        color: gray;
+        text-align: center;
+        font-size: 16px;
+        padding-bottom: 10px;
+      }
+    }
+  }
 }
 
 // 頁尾樣式
 footer {
-    width: 100%;
-    height: 220px;
-    background: $color-black;
-    color: white;
-    direction: none;
-    text-align: center;
-    padding: 30px;
-    
-    #footer-contect {
-        a {
-        color: white;
-        text-decoration: none;
-        display: inline-block; 
-        padding: 30px 20px 25px;
-        font-size: 16px;
-        }
+  width: 100%;
+  height: 220px;
+  background: $color-black;
+  color: white;
+  direction: none;
+  text-align: center;
+  padding: 30px;
+
+  #footer-contect {
+    a {
+      color: white;
+      text-decoration: none;
+      display: inline-block;
+      padding: 30px 20px 25px;
+      font-size: 16px;
+    }
+  }
+
+  #footer-contect1 {
+    display: grid;
+    grid-template-columns: 47% auto 36%;
+    padding: 20px 0px 0;
+
+    #copy {
+      padding: 5px;
     }
 
-    #footer-contect1 {
-        display: grid;
-        grid-template-columns: 47% auto 36%;
-        padding: 20px 0px 0;
-
-        #copy {
-            padding: 5px;
-        }
-
-        a {
-        color: white;
-        text-decoration: none;
-        display: inline-block; 
-        padding: 0 5px 0;
-        font-size: 28px;
-        }
+    a {
+      color: white;
+      text-decoration: none;
+      display: inline-block;
+      padding: 0 5px 0;
+      font-size: 28px;
     }
+  }
 }
 
 hr {
-    background: white;
+  background: white;
 }
 
 // title 標題樣式
 .title {
-font-weight: 1000;
-font-size: 30px;
-text-align: center;
-padding: 30px;
+  font-weight: 1000;
+  font-size: 30px;
+  text-align: center;
+  padding: 30px;
 }
 
 .title1 {
@@ -624,28 +745,28 @@ padding: 30px;
   text-align: center;
   padding: 30px;
   color: white;
-  }
+}
 
 // 統一樣式
 // 按鈕樣式
 .btn {
-    background: $color-black;
-    color: white;
-    padding: 15px 0px;
-    display: block;
-    margin: 0 auto;
-    width: 90%;
-    font-size: 18px;
-    border: 1.5px solid transparent;
-    border-radius: 5px;
-    margin-bottom: 20px;
-    transition: 0.5s;
+  background: $color-black;
+  color: white;
+  padding: 15px 0px;
+  display: block;
+  margin: 0 auto;
+  width: 90%;
+  font-size: 18px;
+  border: 1.5px solid transparent;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  transition: 0.5s;
 
-    &:hover {
-        border: 1.5px solid $color-black;
-        background: gray;
-        color: white;
-    }
+  &:hover {
+    border: 1.5px solid $color-black;
+    background: gray;
+    color: white;
+  }
 }
 
 // 箭頭樣式
