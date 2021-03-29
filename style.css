@@ -715,7 +715,7 @@ p {
 #MANICURIST #manicurist-all #manicurist-content2 .manicurist-card3 h3 {
   font-size: 20px;
   text-align: center;
-  padding: 20px 0 100px;
+  padding: 20px 0 10px;
   color: #423930;
 }
 
@@ -723,7 +723,7 @@ p {
   color: gray;
   text-align: center;
   font-size: 16px;
-  padding-bottom: 10px;
+  padding-bottom: 30px;
 }
 
 form {
