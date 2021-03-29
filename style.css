@@ -643,7 +643,7 @@ p {
   display: grid;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
-  grid-gap: 100px;
+  grid-gap: 10px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -661,6 +661,10 @@ p {
         grid-template-columns: 1fr;
     grid-gap: 50px;
   }
+}
+
+#MANICURIST #manicurist-all #manicurist-content img {
+  width: 80%;
 }
 
 #MANICURIST #manicurist-all #manicurist-content2 {
@@ -683,10 +687,6 @@ p {
   font-size: 30px;
 }
 
-#MANICURIST #manicurist-all #manicurist-content2 .manicurist-card p {
-  font-size: 30px;
-}
-
 @media screen and (max-width: 767px) {
   #MANICURIST #manicurist-all #manicurist-content2 .manicurist-card2 {
     display: none;
@@ -705,8 +705,8 @@ p {
      object-fit: cover;
 }
 
-#MANICURIST #manicurist-all #manicurist-content2 .manicurist-card3 h1 {
-  font-size: 40px;
+#MANICURIST #manicurist-all #manicurist-content2 .manicurist-card3 h3 {
+  font-size: 20px;
   text-align: center;
   padding: 20px 0 10px;
 }

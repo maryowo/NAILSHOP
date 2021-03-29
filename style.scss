@@ -528,7 +528,7 @@ p {
   #manicurist-all {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 100px;
+    grid-gap: 10px;
 
     @media screen and (max-width: $tablet) {
       grid-template-columns: 1fr;
@@ -542,6 +542,9 @@ p {
     }
 
     #manicurist-content {
+      img {
+        width: 80%;
+      }
     }
 
     #manicurist-content2 {
@@ -564,9 +567,6 @@ p {
           font-size: 30px;
         }
 
-        p {
-          font-size: 30px;
-        }
       }
 
       .manicurist-card2 {
@@ -588,8 +588,8 @@ p {
           object-fit: cover;
         }
 
-        h1 {
-          font-size: 40px;
+        h3 {
+          font-size: 20px;
           text-align: center;
           padding: 20px 0 10px;
         }
@@ -615,8 +615,6 @@ form {
     width: 100%;
     padding: 20px 20px 100px;
   }
-
-  
 
   input {
     width: 32.5%;
