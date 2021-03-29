@@ -259,6 +259,7 @@ nav #link a {
   line-height: 1.5;
   font-size: 16px;
   padding: 20px 30px 30px;
+  color: #423930;
 }
 
 #BRAND #brand-content {
@@ -303,6 +304,7 @@ nav #link a {
   text-align: center;
   padding: 20px 0 10px;
   font-size: 14px;
+  color: #423930;
 }
 
 html,
@@ -689,6 +691,7 @@ p {
 
 #MANICURIST #manicurist-all #manicurist-content2 .manicurist-card h1 {
   font-size: 30px;
+  color: #423930;
 }
 
 @media screen and (max-width: 767px) {
@@ -712,7 +715,8 @@ p {
 #MANICURIST #manicurist-all #manicurist-content2 .manicurist-card3 h3 {
   font-size: 20px;
   text-align: center;
-  padding: 20px 0 10px;
+  padding: 20px 0 100px;
+  color: #423930;
 }
 
 #MANICURIST #manicurist-all #manicurist-content2 .manicurist-card3 p {
@@ -820,6 +824,7 @@ form input[type="submit"] {
   font-size: 18px;
   text-align: center;
   padding: 20px 0 10px;
+  color: #423930;
 }
 
 #SHOP #shop-content .shop-card p {

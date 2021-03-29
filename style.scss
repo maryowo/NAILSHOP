@@ -185,6 +185,7 @@ nav {
     line-height: 1.5;
     font-size: 16px;
     padding: 20px 30px 30px;
+    color: $color-black;
   }
 
   #brand-content {
@@ -217,6 +218,7 @@ nav {
       text-align: center;
       padding: 20px 0 10px;
       font-size: 14px;
+      color: $color-black;
     }
   }
 }
@@ -567,6 +569,7 @@ p {
 
         h1 {
           font-size: 30px;
+          color: $color-black;
         }
       }
 
@@ -592,7 +595,8 @@ p {
         h3 {
           font-size: 20px;
           text-align: center;
-          padding: 20px 0 10px;
+          padding: 20px 0 100px;
+          color: $color-black;
         }
 
         p {
@@ -676,6 +680,7 @@ p {
         font-size: 18px;
         text-align: center;
         padding: 20px 0 10px;
+        color: $color-black;
       }
 
       p {
